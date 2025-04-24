@@ -6,5 +6,11 @@ export const Route = createFileRoute("/")({
 });
 
 function App() {
-  return <div className="flex bg-amber-300">hey</div>;
+  return (
+    <>
+      <section className="min-h-dvh bg-amber-100">
+        <div>Some text here</div>
+      </section>
+    </>
+  );
 }
