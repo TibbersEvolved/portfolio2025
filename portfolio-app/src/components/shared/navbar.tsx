@@ -4,7 +4,7 @@ import imgLinkedin from "../../assets/linkedinImg.png";
 export default function Navbar() {
   return (
     <>
-      <header className="flex justify-between gap-2 p-2 lg:p-4 bg-zinc-200 border-2 border-zinc-300 w-auto text-lg m:text-xl lg:text-2xl text-center">
+      <header className="flex justify-between gap-2 p-2 lg:p-4 bg-zinc-200 border-2 border-zinc-300 w-auto text-lg md:text-xl lg:text-2xl text-center">
         <section className="flex justify-normal gap-2">
           <Link
             to="/"
