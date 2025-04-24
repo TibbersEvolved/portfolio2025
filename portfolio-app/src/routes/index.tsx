@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <section className="min-h-dvh bg-zinc-100">
-        <section className="mr-10 ml-10 pt-5">
+        <section className="m:mr-10 m:ml-10 mr-3 ml-3 pt-5">
           <Person_Card />
           <Techstack />
         </section>
