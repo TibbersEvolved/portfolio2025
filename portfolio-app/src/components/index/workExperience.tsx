@@ -1,5 +1,7 @@
 import Job from "./job";
-import ImageSalt from "../../assets/linkedinImg.png";
+import ImageSalt from "../../assets/saltImg.png";
+import ImageParty from "../../assets/partyland.png";
+import ImageKjell from "../../assets/kjell.png";
 
 export default function WorkExperience() {
   return (
@@ -18,14 +20,14 @@ export default function WorkExperience() {
           yearFrom={2023}
           yearTo="2024"
           desc="Managed 2 stores, trained and coached staff and other managers. Handled hiring, schedueling and took iniatives to boost sales."
-          image={ImageSalt}
+          image={ImageParty}
         />
         <Job
           title="Store Manager- Kjell and Company"
           yearFrom={2021}
           yearTo="2023"
           desc="Manager of store, responsible to train staff, manage budgets and create an amazing shopping experience"
-          image={ImageSalt}
+          image={ImageKjell}
         />
       </section>
     </>
