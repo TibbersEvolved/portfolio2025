@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
 function App() {
   return (
     <>
-      <section className="min-h-dvh bg-zinc-100">
+      <section className="bg-zinc-100 pb-4">
         <section className="md:mr-10 md:ml-10 mr-3 ml-3 pt-5">
           <Person_Card />
           <Techstack />

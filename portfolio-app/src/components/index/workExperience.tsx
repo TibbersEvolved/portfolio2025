@@ -4,7 +4,7 @@ import ImageSalt from "../../assets/linkedinImg.png";
 export default function WorkExperience() {
   return (
     <>
-      <section className="bg-zinc-50 shadow-md gap-8 p-4 flex flex-col mt-5">
+      <section className="bg-zinc-50 shadow-md gap-8 p-4 flex flex-col mt-5 mb-4">
         <div className="text-2xl underline">Work Experience</div>
         <Job
           title="Java Fullstack Developer - School of Applied Technology"
