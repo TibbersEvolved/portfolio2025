@@ -1,41 +1,54 @@
 import { Link } from "@tanstack/react-router";
+import imgLinkedin from "../../assets/linkedinImg.png";
 
 export default function Navbar() {
   return (
     <>
-      <header className="flex justify-normal gap-2 p-2 lg:p-4 bg-amber-200 w-auto text-lg m:text-xl lg:text-2xl text-center">
-        <Link
-          to="/"
-          className="hover:text-white transition-colors duration-100"
-          activeProps={{
-            className: "font-bold",
-          }}
-          activeOptions={{ exact: true }}
-        >
-          Home
-        </Link>{" "}
-        <div>|</div>
-        <Link
-          to="/projects"
-          className="hover:text-white transition-colors duration-100"
-          activeProps={{
-            className: "font-bold",
-          }}
-          activeOptions={{ exact: true }}
-        >
-          Projects
-        </Link>{" "}
-        <div>|</div>
-        <Link
-          to="/cv"
-          className="hover:text-white transition-colors duration-100"
-          activeProps={{
-            className: "font-bold",
-          }}
-          activeOptions={{ exact: true }}
-        >
-          CV
-        </Link>{" "}
+      <header className="flex justify-between gap-2 p-2 lg:p-4 bg-amber-200 w-auto text-lg m:text-xl lg:text-2xl text-center">
+        <section className="flex justify-normal gap-2">
+          <Link
+            to="/"
+            className="hover:text-white transition-colors duration-100"
+            activeProps={{
+              className: "font-bold",
+            }}
+            activeOptions={{ exact: true }}
+          >
+            Home
+          </Link>{" "}
+          <div>|</div>
+          <Link
+            to="/projects"
+            className="hover:text-white transition-colors duration-100"
+            activeProps={{
+              className: "font-bold",
+            }}
+            activeOptions={{ exact: true }}
+          >
+            Projects
+          </Link>{" "}
+          <div>|</div>
+          <Link
+            to="/cv"
+            className="hover:text-white transition-colors duration-100"
+            activeProps={{
+              className: "font-bold",
+            }}
+            activeOptions={{ exact: true }}
+          >
+            CV
+          </Link>{" "}
+        </section>
+        <section className="flex justify-normal gap-2">
+          <div>Contact:</div>
+          <div>Erik.Olin.Spanga@gmail.com</div>
+          <a
+            href="https://www.linkedin.com/in/erik-olin-608a2611b/"
+            target="_blank"
+          >
+            <img src={imgLinkedin} className="size-8 p-0 m-0"></img>
+          </a>
+        </section>
       </header>
     </>
   );
