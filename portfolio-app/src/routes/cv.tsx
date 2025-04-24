@@ -7,7 +7,7 @@ export const Route = createFileRoute("/cv")({
 function RouteComponent() {
   return (
     <>
-      <section className="min-h-dvh bg-amber-100"></section>
+      <section className="min-h-dvh bg-zinc-100"></section>
     </>
   );
 }
