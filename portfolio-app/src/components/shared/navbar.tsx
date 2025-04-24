@@ -40,8 +40,7 @@ export default function Navbar() {
           </Link>{" "}
         </section>
         <section className="flex justify-normal gap-2">
-          <div>Contact:</div>
-          <div>Erik.Olin.Spanga@gmail.com</div>
+          <div>Socials:</div>
           <a
             href="https://www.linkedin.com/in/erik-olin-608a2611b/"
             target="_blank"
