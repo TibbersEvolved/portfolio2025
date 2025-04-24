@@ -1,7 +1,28 @@
+import { getAllSkills, type skill } from "../data/skillDB";
 import ProjectCard from "./projectCard";
 
 export default function ProjectContainer() {
   const imgText = "https://picsum.photos/200/200";
+  const skills = getAllSkills();
+
+  function getSpecificSkill(name: string) {
+    return skills.find((sk) => sk.name === name);
+  }
+
+  function addToList(name: string, list: skill[]) {
+    const newSkill = getSpecificSkill(name);
+    if (!(newSkill === undefined)) {
+      list.push(newSkill);
+    }
+  }
+
+  function generateList(names: string[]) {
+    const projectSkills: skill[] = [];
+    names.map((str) => {
+      addToList(str, projectSkills);
+    });
+    return projectSkills;
+  }
 
   return (
     <>
@@ -10,21 +31,25 @@ export default function ProjectContainer() {
           title="A Project"
           desc="Worked with C# and Angular to create something"
           image={imgText}
+          skills={generateList(["React", "Java"])}
         />
         <ProjectCard
           title="A Project"
           desc="Worked with C# and Angular to create something"
           image={imgText}
+          skills={generateList(["React", "Java", "C#"])}
         />
         <ProjectCard
           title="A Project"
           desc="Worked with C# and Angular to create something"
           image={imgText}
+          skills={generateList(["React", "Java"])}
         />
         <ProjectCard
           title="A Project"
           desc="Worked with C# and Angular to create something"
           image={imgText}
+          skills={generateList(["React", "Java"])}
         />
       </section>
     </>
