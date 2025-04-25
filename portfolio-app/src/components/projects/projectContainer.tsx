@@ -1,9 +1,10 @@
 import { getAllSkills, type skill } from "../data/skillDB";
 import ProjectCard from "./projectCard";
 import iconTibberstd from "../../assets/project/tibberstd.png";
+import iconSpring from "../../assets/spring.svg";
+import iconMed from "../../assets/project/medievalChess.png";
 
 export default function ProjectContainer() {
-  const imgText = "https://picsum.photos/200/200";
   const skills = getAllSkills();
 
   function getSpecificSkill(name: string) {
@@ -27,7 +28,7 @@ export default function ProjectContainer() {
 
   return (
     <>
-      <section className="flex flex-wrap justify-center gap-10 md:mr-10 md:ml-10 mr-3 ml-3 pt-5">
+      <section className="flex flex-wrap justify-center gap-10 md:mr-10 md:ml-10 mr-3 ml-3 pb-4 pt-5">
         <ProjectCard
           title="Tibbers Tower Defense"
           desc="A rougelike tower defense with randomized maps. Developed with Unity, using C#"
@@ -35,22 +36,22 @@ export default function ProjectContainer() {
           skills={generateList(["C#"])}
         />
         <ProjectCard
-          title="A Project"
-          desc="Worked with C# and Angular to create something"
-          image={imgText}
-          skills={generateList(["React", "Java", "C#"])}
+          title="Salt Companion"
+          desc="Fullstack Java app that allows teachers to setup a learning enviroment for students. Support for ai content generation."
+          image={iconSpring}
+          skills={generateList(["React", "Java", "Postgres"])}
         />
         <ProjectCard
-          title="A Project"
-          desc="Worked with C# and Angular to create something"
-          image={imgText}
-          skills={generateList(["React", "Java"])}
+          title="Medieval Chess"
+          desc="Salt Bootcamp web browser game using Java, React, SQL DB, Typescript."
+          image={iconMed}
+          skills={generateList(["React", "Java", "Spring Boot"])}
         />
         <ProjectCard
-          title="A Project"
-          desc="Worked with C# and Angular to create something"
-          image={imgText}
-          skills={generateList(["React", "Java"])}
+          title="Toobia Nordic Backend"
+          desc="Lightweight backend for handling inventory management for Swedish Scouts."
+          image={iconSpring}
+          skills={generateList(["Spring Boot", "Java", "Postgres"])}
         />
       </section>
     </>
