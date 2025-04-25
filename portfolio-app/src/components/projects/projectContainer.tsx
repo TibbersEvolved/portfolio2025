@@ -1,5 +1,6 @@
 import { getAllSkills, type skill } from "../data/skillDB";
 import ProjectCard from "./projectCard";
+import iconTibberstd from "../../assets/project/tibberstd.png";
 
 export default function ProjectContainer() {
   const imgText = "https://picsum.photos/200/200";
@@ -28,10 +29,10 @@ export default function ProjectContainer() {
     <>
       <section className="flex flex-wrap justify-center gap-10 md:mr-10 md:ml-10 mr-3 ml-3 pt-5">
         <ProjectCard
-          title="A Project"
-          desc="Worked with C# and Angular to create something"
-          image={imgText}
-          skills={generateList(["React", "Java"])}
+          title="Tibbers Tower Defense"
+          desc="A rougelike tower defense with randomized maps. Developed with Unity, using C#"
+          image={iconTibberstd}
+          skills={generateList(["C#"])}
         />
         <ProjectCard
           title="A Project"
