@@ -1,3 +1,4 @@
+import CvHolder from "@/components/cv/cvholder";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/cv")({
@@ -7,7 +8,9 @@ export const Route = createFileRoute("/cv")({
 function RouteComponent() {
   return (
     <>
-      <section className="min-h-dvh bg-zinc-100"></section>
+      <section className="min-h-dvh bg-zinc-100">
+        <CvHolder />
+      </section>
     </>
   );
 }
