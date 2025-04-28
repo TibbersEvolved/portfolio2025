@@ -14,7 +14,7 @@ export function getAllSkills() {
     { name: "Typescript", image: iconTS, category: ["core"] },
     { name: "C#", image: iconC, category: ["core"] },
     { name: "Docker", image: iconDocker, category: ["core"] },
-    { name: "Postgres", image: iconPostGres, category: ["core"] },
+    { name: "PostgreSQL", image: iconPostGres, category: ["core"] },
   ];
   return list;
 }

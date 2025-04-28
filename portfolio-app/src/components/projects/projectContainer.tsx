@@ -39,7 +39,7 @@ export default function ProjectContainer() {
           title="Salt Companion"
           desc="Fullstack Java app that allows teachers to setup a learning enviroment for students. Support for ai content generation."
           image={iconSpring}
-          skills={generateList(["React", "Java", "Postgres"])}
+          skills={generateList(["React", "Java", "PostgreSQL"])}
         />
         <ProjectCard
           title="Medieval Chess"
@@ -51,7 +51,7 @@ export default function ProjectContainer() {
           title="Toobia Nordic Backend"
           desc="Lightweight backend for handling inventory management for Swedish Scouts."
           image={iconSpring}
-          skills={generateList(["Spring Boot", "Java", "Postgres"])}
+          skills={generateList(["Spring Boot", "Java", "PostgreSQL"])}
         />
       </section>
     </>
