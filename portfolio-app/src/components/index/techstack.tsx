@@ -27,6 +27,7 @@ export default function Techstack() {
             <option value={"core"}>Core</option>
             <option value={"frontend"}>Frontend</option>
             <option value={"backend"}>Backend</option>
+            <option value={"devops"}>Devops</option>
           </select>
         </div>
         <div className="flex flex-row gap-2 flex-wrap">

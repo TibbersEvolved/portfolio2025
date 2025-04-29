@@ -5,16 +5,20 @@ import iconSpring from "../../assets/spring.svg";
 import iconC from "../../assets/c-sharp-c.svg";
 import iconDocker from "../../assets/docker.svg";
 import iconPostGres from "../../assets/postgres.png";
+import iconGCP from "../../assets/gcp.png";
+import iconAzure from "../../assets/azure.png";
 
 export function getAllSkills() {
   let list: skill[] = [
     { name: "React", image: iconReact, category: ["core", "frontend"] },
     { name: "Java", image: iconJava, category: ["core", "backend"] },
-    { name: "Spring Boot", image: iconSpring, category: ["core"] },
-    { name: "Typescript", image: iconTS, category: ["core"] },
-    { name: "C#", image: iconC, category: ["core"] },
-    { name: "Docker", image: iconDocker, category: ["core"] },
+    { name: "Spring Boot", image: iconSpring, category: ["core", "backend"] },
+    { name: "Typescript", image: iconTS, category: ["core", "frontend"] },
+    { name: "C#", image: iconC, category: ["core", "backend"] },
+    { name: "Docker", image: iconDocker, category: ["core", "devops"] },
     { name: "PostgreSQL", image: iconPostGres, category: ["core"] },
+    { name: "GCP", image: iconGCP, category: ["devops"] },
+    { name: "Azure", image: iconAzure, category: ["devops"] },
   ];
   return list;
 }
