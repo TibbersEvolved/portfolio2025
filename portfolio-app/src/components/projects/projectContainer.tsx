@@ -5,7 +5,7 @@ export default function ProjectContainer() {
   const projects = getProjects();
   return (
     <>
-      <section className="flex flex-wrap justify-center gap-10 md:mr-10 md:ml-10 mr-3 ml-3 pb-4 pt-5">
+      <section className="flex flex-wrap justify-center gap-10 md:mr-10 md:ml-10 mr-3 ml-3 pb-4 pt-5 font-roboto">
         {projects.map((data, key) => {
           return <ProjectCard key={key} data={data} />;
         })}

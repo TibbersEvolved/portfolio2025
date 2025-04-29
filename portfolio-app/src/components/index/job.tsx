@@ -4,12 +4,12 @@ export default function Job(props: prop) {
       <section className="flex flex-col border-b-2 border-neutral-200">
         <header className="flex flex-row gap-0.5 text-sm md:text-lg font-bold">
           <img className="size-8" src={props.image}></img>
-          <div>{props.title}</div>
+          <div className="font-ibm">{props.title}</div>
         </header>
         <div className="text-sm md:text-base font-thin text-slate-700">
           {props.yearFrom} - {props.yearTo}
         </div>
-        <div className="text-xs md:text-base">{props.desc}</div>
+        <div className="text-xs md:text-base font-roboto">{props.desc}</div>
       </section>
     </>
   );

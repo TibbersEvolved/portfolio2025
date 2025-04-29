@@ -14,19 +14,20 @@ export default function Techstack() {
 
   return (
     <>
-      <section className="bg-zinc-50 shadow-md gap-5 p-4 flex flex-col mt-4">
-        <div className="text-xl font-bold flex gap-6">
-          <div>Technologies:</div>{" "}
+      <section className="bg-zinc-50 shadow-md gap-5 p-4 flex flex-col mt-4 rounded-md">
+        <div className="text-xl font-bold flex gap-6 border-b-2 p-1 border-zinc-200">
+          <div className="font-ibm">Technologies:</div>{" "}
           <select
             name="selectFilter"
             defaultValue={"core"}
-            className="bg-zinc-100 shadow-sm border-2 border-zinc-200 hover:border-amber-200"
+            className="bg-zinc-100 font-ibm shadow-sm border-2 rounded-sm border-zinc-200 hover:border-amber-200"
             onChange={(e) => onSelect(e)}
           >
             Core
             <option value={"core"}>Core</option>
             <option value={"frontend"}>Frontend</option>
             <option value={"backend"}>Backend</option>
+            <option value={"devops"}>Devops</option>
           </select>
         </div>
         <div className="flex flex-row gap-2 flex-wrap">
