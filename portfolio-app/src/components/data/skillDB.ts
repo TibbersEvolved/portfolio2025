@@ -8,8 +8,8 @@ import iconPostGres from "../../assets/postgres.png";
 
 export function getAllSkills() {
   let list: skill[] = [
-    { name: "React", image: iconReact, category: ["core"] },
-    { name: "Java", image: iconJava, category: ["core"] },
+    { name: "React", image: iconReact, category: ["core", "frontend"] },
+    { name: "Java", image: iconJava, category: ["core", "backend"] },
     { name: "Spring Boot", image: iconSpring, category: ["core"] },
     { name: "Typescript", image: iconTS, category: ["core"] },
     { name: "C#", image: iconC, category: ["core"] },
@@ -17,6 +17,16 @@ export function getAllSkills() {
     { name: "PostgreSQL", image: iconPostGres, category: ["core"] },
   ];
   return list;
+}
+
+export function getSkillsByCategory(list: skill[], category: string) {
+  let newList: skill[] = [];
+  list.map((sk) => {
+    if (sk.category.includes(category)) {
+      newList.push(sk);
+    }
+  });
+  return newList;
 }
 
 export type skill = {
