@@ -10,7 +10,7 @@ function RouteComponent() {
     <>
       <section className="min-h-dvh bg-zinc-100">
         <header className="flex justify-center">
-          <div className="text-4xl mt-3">My projects</div>
+          <div className="text-4xl mt-3 font-ibm">My projects</div>
         </header>
         <ProjectContainer />
       </section>

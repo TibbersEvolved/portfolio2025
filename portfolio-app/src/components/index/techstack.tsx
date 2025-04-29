@@ -16,11 +16,11 @@ export default function Techstack() {
     <>
       <section className="bg-zinc-50 shadow-md gap-5 p-4 flex flex-col mt-4 rounded-md">
         <div className="text-xl font-bold flex gap-6 border-b-2 p-1 border-zinc-200">
-          <div>Technologies:</div>{" "}
+          <div className="font-ibm">Technologies:</div>{" "}
           <select
             name="selectFilter"
             defaultValue={"core"}
-            className="bg-zinc-100 shadow-sm border-2 rounded-sm border-zinc-200 hover:border-amber-200"
+            className="bg-zinc-100 font-ibm shadow-sm border-2 rounded-sm border-zinc-200 hover:border-amber-200"
             onChange={(e) => onSelect(e)}
           >
             Core
