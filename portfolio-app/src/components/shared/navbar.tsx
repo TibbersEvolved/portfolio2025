@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import imgLinkedin from "../../assets/linkedinImg.png";
+import imgGith from "../../assets/github.png";
 
 export default function Navbar() {
   return (
@@ -40,12 +41,14 @@ export default function Navbar() {
           </Link>{" "}
         </section>
         <section className="flex justify-normal gap-2">
-          <div>Socials:</div>
           <a
             href="https://www.linkedin.com/in/erik-olin-608a2611b/"
             target="_blank"
           >
             <img src={imgLinkedin} className="size-8 p-0 m-0"></img>
+          </a>
+          <a href="https://github.com/TibbersEvolved" target="_blank">
+            <img src={imgGith} className="size-8 p-0 m-0"></img>
           </a>
         </section>
       </header>
