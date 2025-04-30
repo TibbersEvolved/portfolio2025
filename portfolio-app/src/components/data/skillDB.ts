@@ -11,6 +11,8 @@ import iconGithub from "../../assets/github.png";
 import iconTailwind from "../../assets/tailwind.webp";
 import iconTanstack from "../../assets/tanstack.png";
 import iconCPlus from "../../assets/c++.png";
+import iconAW from "../../assets/aws.avif";
+import iconKafka from "../../assets/kafka.webp";
 
 export function getAllSkills() {
   let list: skill[] = [
@@ -28,6 +30,8 @@ export function getAllSkills() {
     { name: "Tanstack Router", image: iconTanstack, category: ["frontend"] },
     { name: "Tanstack Query", image: iconTanstack, category: ["frontend"] },
     { name: "C++", image: iconCPlus, category: ["backend", "core"] },
+    { name: "AWS", image: iconAW, category: ["devops"] },
+    { name: "Kafka", image: iconKafka, category: ["backend"] },
   ];
   return list;
 }
