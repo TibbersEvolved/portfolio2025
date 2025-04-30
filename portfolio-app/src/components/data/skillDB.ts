@@ -7,6 +7,10 @@ import iconDocker from "../../assets/docker.svg";
 import iconPostGres from "../../assets/postgres.png";
 import iconGCP from "../../assets/gcp.png";
 import iconAzure from "../../assets/azure.png";
+import iconGithub from "../../assets/github.png";
+import iconTailwind from "../../assets/tailwind.webp";
+import iconTanstack from "../../assets/tanstack.png";
+import iconCPlus from "../../assets/c++.png";
 
 export function getAllSkills() {
   let list: skill[] = [
@@ -19,6 +23,11 @@ export function getAllSkills() {
     { name: "PostgreSQL", image: iconPostGres, category: ["core"] },
     { name: "GCP", image: iconGCP, category: ["devops"] },
     { name: "Azure", image: iconAzure, category: ["devops"] },
+    { name: "Github Actions", image: iconGithub, category: ["devops"] },
+    { name: "Tailwind", image: iconTailwind, category: ["frontend"] },
+    { name: "Tanstack Router", image: iconTanstack, category: ["frontend"] },
+    { name: "Tanstack Query", image: iconTanstack, category: ["frontend"] },
+    { name: "C++", image: iconCPlus, category: ["backend", "core"] },
   ];
   return list;
 }
