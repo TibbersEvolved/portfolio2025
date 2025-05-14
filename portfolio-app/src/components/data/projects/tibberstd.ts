@@ -20,6 +20,11 @@ export const tibberstd: projectData = {
         pageText: "",
         pageImages: [testIMG, iconTibberstd, testIMG],
       },
+      {
+        pageType: "video",
+        pageText: "YI9vYH80DZo",
+        pageImages: [],
+      },
     ],
   },
 };
