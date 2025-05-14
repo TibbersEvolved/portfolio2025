@@ -1,8 +1,10 @@
 import type { projectInfo } from "../projects/projectCard";
 import { getAllSkills, type skill } from "./skillDB";
-import iconTibberstd from "../../assets/project/tibberstd.png";
-import iconSpring from "../../assets/spring.svg";
-import iconMed from "../../assets/project/medievalChess.png";
+import type { projectData } from "../projects/projectPage";
+import { tibberstd } from "./projects/tibberstd";
+import { saltCompanion } from "./projects/saltCompanion";
+import { medievalChess } from "./projects/medievalChess";
+import { toobiaNordic } from "./projects/toobiaNordic";
 
 export default function getProjects() {
   const skills = getAllSkills();
@@ -26,31 +28,23 @@ export default function getProjects() {
     return projectSkills;
   }
 
+  function generateFromData(info: projectData): projectInfo {
+    info.info.data.map((s) => {
+      console.log("Type = " + typeof s);
+    });
+    return {
+      title: info.title,
+      desc: info.desc,
+      image: info.image,
+      skills: generateList(info.skills),
+    };
+  }
+
   const projects: projectInfo[] = [
-    {
-      title: "Tibbers Tower Defense",
-      image: iconTibberstd,
-      desc: "A rougelike tower defense with randomized maps. Developed with Unity, using C#",
-      skills: generateList(["C#"]),
-    },
-    {
-      title: "Salt Companion",
-      image: iconSpring,
-      desc: "Fullstack Java app that allows teachers to setup a learning enviroment for students. Support for ai content generation.",
-      skills: generateList(["React", "Java", "PostgreSQL"]),
-    },
-    {
-      title: "Medieval Chess",
-      image: iconMed,
-      desc: "Salt Bootcamp web browser game using Java, React, SQL DB, Typescript.",
-      skills: generateList(["React", "Java", "Spring Boot"]),
-    },
-    {
-      title: "Toobia Nordic Backend",
-      image: iconSpring,
-      desc: "Lightweight backend for handling inventory management for Swedish Scouts.",
-      skills: generateList(["React", "Java", "PostgreSQL"]),
-    },
+    generateFromData(tibberstd),
+    generateFromData(saltCompanion),
+    generateFromData(medievalChess),
+    generateFromData(toobiaNordic),
   ];
   return projects;
 }
