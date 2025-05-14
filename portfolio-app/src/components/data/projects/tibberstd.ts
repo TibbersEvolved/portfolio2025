@@ -1,5 +1,6 @@
 import type { projectData } from "@/components/projects/projectPage";
 import iconTibberstd from "../../../assets/project/tibberstd.png";
+import testIMG from "../../../assets/saltImg.png";
 
 export const tibberstd: projectData = {
   title: "Tibbers Tower Defense",
@@ -9,9 +10,15 @@ export const tibberstd: projectData = {
   info: {
     data: [
       {
-        pageType: "",
-        pageText: "",
+        pageType: "text",
+        pageText:
+          "A game project started in 2023 using Unity Game Engine, C# and assets created by myself. During this project I learned 3d modelling using blender, as well as greatly my ability to architecture large codebases. The game is still under development and I am aiming for a release late 2025 or early 2026.",
         pageImages: [],
+      },
+      {
+        pageType: "images",
+        pageText: "",
+        pageImages: [testIMG, iconTibberstd, testIMG],
       },
     ],
   },
