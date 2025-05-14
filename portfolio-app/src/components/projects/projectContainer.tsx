@@ -45,7 +45,7 @@ export default function ProjectContainer() {
     <>
       <section className="md:mr-10 md:ml-10 mr-3 ml-3 mt-2 bg-neutral-50 shadow-md">
         <button
-          className="border-2 mt-2 ml-2 border-solid border-amber-500 mr-auto"
+          className="border-2 mt-2 p-1 ml-2 border-solid transition-colors duration-100 hover:bg-yellow-200 border-amber-500 bg-yellow-400 font-bold text-lg rounded-md shadow-md mr-auto"
           onClick={() => setProject("none")}
         >
           Go Back
