@@ -28,15 +28,16 @@ export default function getProjects() {
     return projectSkills;
   }
 
-  function generateFromData(info: projectData): projectInfo {
-    info.info.data.map((s) => {
+  function generateFromData(data: projectData): projectInfo {
+    data.info.data.map((s) => {
       console.log("Type = " + typeof s);
     });
     return {
-      title: info.title,
-      desc: info.desc,
-      image: info.image,
-      skills: generateList(info.skills),
+      title: data.title,
+      desc: data.desc,
+      image: data.image,
+      skills: generateList(data.skills),
+      info: data.info,
     };
   }
 
