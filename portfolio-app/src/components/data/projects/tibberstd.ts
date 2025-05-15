@@ -22,8 +22,8 @@ export const tibberstd: projectData = {
       },
       {
         pageType: "video",
-        pageText: "YI9vYH80DZo",
-        pageImages: [],
+        pageText: "Ccnb0l9OqaQ",
+        pageImages: ["60"],
       },
     ],
   },

@@ -29,15 +29,14 @@ export default function getProjects() {
   }
 
   function generateFromData(data: projectData): projectInfo {
-    data.info.data.map((s) => {
-      console.log("Type = " + typeof s);
-    });
+    console.log("Id = : " + data.title.replace(/\s/g, "").toLowerCase());
     return {
       title: data.title,
       desc: data.desc,
       image: data.image,
       skills: generateList(data.skills),
       info: data.info,
+      id: data.title.replace(/\s/g, "").toLowerCase(),
     };
   }
 

@@ -3,14 +3,27 @@ import type { pageContent } from "./types";
 
 export default function ProjectPage(prop: pageProps) {
   const data = prop.pageInfo.data;
-  const options = {
-    height: "390",
-    width: "640",
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
-    },
-  };
+
+  function getTime(db: pageContent) {
+    if (db.pageImages.length > 0) {
+      let x: number = +db.pageImages[0];
+      console.log("X is = " + x);
+      return x;
+    }
+    return 0;
+  }
+
+  function getOptions(db: pageContent) {
+    return {
+      height: "390",
+      width: "640",
+      playerVars: {
+        start: getTime(db),
+        autoplay: 1,
+      },
+    };
+  }
+
   return (
     <>
       {data.map((s) => {
@@ -32,7 +45,7 @@ export default function ProjectPage(prop: pageProps) {
           return (
             <>
               <div className="flex justify-center pt-8 p-4">
-                <YouTube videoId={s.pageText} opts={options} />
+                <YouTube videoId={s.pageText} opts={getOptions(s)} />
               </div>
             </>
           );

@@ -19,7 +19,8 @@ export default function Navbar() {
           </Link>{" "}
           <div>|</div>
           <Link
-            to="/projects"
+            to="/projects/$id"
+            params={{ id: "all" }}
             className="hover:text-white transition-colors duration-100"
             activeProps={{
               className: "font-bold",

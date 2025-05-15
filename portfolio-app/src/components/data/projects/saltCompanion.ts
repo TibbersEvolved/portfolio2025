@@ -9,9 +9,9 @@ export const saltCompanion: projectData = {
   info: {
     data: [
       {
-        pageType: "",
-        pageText: "",
-        pageImages: [],
+        pageType: "video",
+        pageText: "z2-wnnS37AY",
+        pageImages: ["59"],
       },
     ],
   },
