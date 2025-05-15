@@ -5,6 +5,7 @@ import { tibberstd } from "./projects/tibberstd";
 import { saltCompanion } from "./projects/saltCompanion";
 import { medievalChess } from "./projects/medievalChess";
 import { toobiaNordic } from "./projects/toobiaNordic";
+import { notionProxy } from "./projects/notionProxy";
 
 export default function getProjects() {
   const skills = getAllSkills();
@@ -28,21 +29,22 @@ export default function getProjects() {
     return projectSkills;
   }
 
-  function generateFromData(info: projectData): projectInfo {
-    info.info.data.map((s) => {
-      console.log("Type = " + typeof s);
-    });
+  function generateFromData(data: projectData): projectInfo {
+    console.log("Id = : " + data.title.replace(/\s/g, "").toLowerCase());
     return {
-      title: info.title,
-      desc: info.desc,
-      image: info.image,
-      skills: generateList(info.skills),
+      title: data.title,
+      desc: data.desc,
+      image: data.image,
+      skills: generateList(data.skills),
+      info: data.info,
+      id: data.title.replace(/\s/g, "").toLowerCase(),
     };
   }
 
   const projects: projectInfo[] = [
-    generateFromData(tibberstd),
+    generateFromData(notionProxy),
     generateFromData(saltCompanion),
+    generateFromData(tibberstd),
     generateFromData(medievalChess),
     generateFromData(toobiaNordic),
   ];
