@@ -12,11 +12,18 @@ export default function ProjectPage(prop: pageProps) {
     }
     return 0;
   }
+  let ytWidth = 640;
+  let ytHeight = 390;
+  if (window.screen.width <= 720) {
+    console.log("made smaller");
+    ytWidth = 320;
+    ytHeight = 185;
+  }
 
   function getOptions(db: pageContent) {
     return {
-      height: "390",
-      width: "640",
+      height: ytHeight,
+      width: ytWidth,
       playerVars: {
         start: getTime(db),
         autoplay: 0,
