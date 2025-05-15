@@ -38,9 +38,10 @@ export default function ProjectContainer(prop: props) {
   return (
     <>
       <section className="md:mr-10 md:ml-10 mr-3 ml-3 mt-2 bg-neutral-50 shadow-md min-h-screen rounded-md">
-        <div className="flex justify-center gap-10">
+        <div className="flex justify-center gap-10 border-b-2 border-zinc-200 p-2 ml-2 mr-2">
           <div className="text-2xl font-bold underline">{pageData.title}</div>
         </div>
+
         <ProjectPage pageInfo={pageData.info} />
       </section>
     </>
