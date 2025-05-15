@@ -1,6 +1,8 @@
 import type { projectData } from "@/components/projects/projectPage";
 import iconTibberstd from "../../../assets/project/tibberstd.png";
-import testIMG from "../../../assets/saltImg.png";
+import screenShot1 from "../../../assets/project/tdScreenshot.png";
+import screenShot2 from "../../../assets/project/tdScreenshot2.png";
+import screenShot3 from "../../../assets/project/tdScreenshot3.png";
 
 export const tibberstd: projectData = {
   title: "Tibbers Tower Defense",
@@ -18,12 +20,13 @@ export const tibberstd: projectData = {
       {
         pageType: "images",
         pageText: "",
-        pageImages: [testIMG, iconTibberstd, testIMG],
+        pageImages: [screenShot1, screenShot2, screenShot3],
       },
       {
-        pageType: "video",
-        pageText: "Ccnb0l9OqaQ",
-        pageImages: ["60"],
+        pageType: "text",
+        pageText:
+          "The game features a high degree of randomization, ensuring each playthrough is different. Players get random options of defenses, bonus and enemies to face. Making sure the UX is clear with good player feedback has been important to allow new players to quickly pick-up the game. As the project is turning quite large, good code architecture has been vital to keep it scalable, with regards to perfomance and ease of adding new features. Optimization has been crucial as the game has to handle hundreds of objects at once in the later stages.",
+        pageImages: [],
       },
     ],
   },
