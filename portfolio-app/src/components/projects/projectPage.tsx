@@ -19,7 +19,7 @@ export default function ProjectPage(prop: pageProps) {
       width: "640",
       playerVars: {
         start: getTime(db),
-        autoplay: 1,
+        autoplay: 0,
       },
     };
   }
