@@ -16,8 +16,10 @@ export default function ProjectCard(props: projectProp) {
           className="size-40 rounded-2xl ml-auto mt-4 shadow-md shadow-slate-700  mr-auto"
           src={image}
         ></img>
-        <div className="p-2">
-          <header className="text-lg font-semibold font-ibm">{title}</header>
+        <div className="p-2 text-center">
+          <header className="text-lg font-semibold text-ce font-ibm">
+            {title}
+          </header>
           <div>{desc}</div>
         </div>
         <div className="flex gap-2 justify-center mt-auto mb-2">

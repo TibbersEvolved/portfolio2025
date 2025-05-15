@@ -5,6 +5,7 @@ import { tibberstd } from "./projects/tibberstd";
 import { saltCompanion } from "./projects/saltCompanion";
 import { medievalChess } from "./projects/medievalChess";
 import { toobiaNordic } from "./projects/toobiaNordic";
+import { notionProxy } from "./projects/notionProxy";
 
 export default function getProjects() {
   const skills = getAllSkills();
@@ -41,8 +42,9 @@ export default function getProjects() {
   }
 
   const projects: projectInfo[] = [
-    generateFromData(tibberstd),
+    generateFromData(notionProxy),
     generateFromData(saltCompanion),
+    generateFromData(tibberstd),
     generateFromData(medievalChess),
     generateFromData(toobiaNordic),
   ];
