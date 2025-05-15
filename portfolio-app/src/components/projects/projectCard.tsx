@@ -10,7 +10,7 @@ export default function ProjectCard(props: projectProp) {
       <Link
         to="/projects/$id"
         params={{ id: id }}
-        className="flex flex-col size-84 bg-zinc-50 shadow-md shadow-emerald-500 rounded-2xl hover:bg-zinc-100"
+        className="flex flex-col size-84 bg-zinc-50 shadow-md shadow-slate-400 rounded-2xl hover:bg-zinc-100"
       >
         <img
           className="size-40 rounded-2xl ml-auto mt-4 shadow-md shadow-slate-700  mr-auto"
