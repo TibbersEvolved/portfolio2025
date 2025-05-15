@@ -21,7 +21,6 @@ export const saltCompanion: projectData = {
           "The app tracks the students progress, including their certainity in different topics, streaks and more, which is saved to database. Cards are picked more commonly if the student finds them hard, so you don't repeat stuff you already know. The frontend nicely displays relevant data to the student, including what they need to study more and their progress in each topic.",
         pageImages: [""],
       },
-      ,
       {
         pageType: "video",
         pageText: "z2-wnnS37AY",
@@ -31,7 +30,7 @@ export const saltCompanion: projectData = {
         pageType: "text",
         pageText:
           "For teachers, we created an interactive UI to create content and administer bootcamps. Teachers also have the option to use AI (powered by CHAT GPT) to generate flashcards with a single button press. This reduces the work teachers have to put in to create a vast array of questions.",
-        pageImages: [""],
+        pageImages: [],
       },
       {
         pageType: "text",
