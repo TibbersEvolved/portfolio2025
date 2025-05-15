@@ -14,7 +14,7 @@ export const tibberstd: projectData = {
       {
         pageType: "text",
         pageText:
-          "A game project started in 2023 using Unity Game Engine, C# and assets created by myself. During this project I learned 3d modelling using blender, as well as greatly my ability to architecture large codebases. The game is still under development and I am aiming for a release late 2025 or early 2026.",
+          "A game project started in 2023 using Unity Game Engine, C# and assets created by myself. During this project I learned 3d modelling using blender, as well as greatly improved my ability to architecture large codebases. The game is still under development and I am aiming for a release late 2025 or early 2026.",
         pageImages: [],
       },
       {
