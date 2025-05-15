@@ -16,8 +16,8 @@ export const notionProxy: projectData = {
         pageImages: [],
       },
       {
-        pageType: "images",
-        pageText: "",
+        pageType: "bigImage",
+        pageText: diagramImage,
         pageImages: [diagramImage],
       },
       {

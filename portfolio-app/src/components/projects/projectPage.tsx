@@ -50,6 +50,15 @@ export default function ProjectPage(prop: pageProps) {
             </>
           );
         }
+        if (s.pageType === "bigImage") {
+          return (
+            <>
+              <section className="flex flex-wrap gap-8 p-2 justify-center">
+                <img className="w-1/2 h-60" src={s.pageText}></img>
+              </section>
+            </>
+          );
+        }
       })}
     </>
   );
